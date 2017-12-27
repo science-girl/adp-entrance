@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>Quiz</title>
+    <style type="text/css">
+
+    .btn-content{
+        padding: 15px;
+        font-size: 18px;
+        min-height: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    body{
+      padding-top: 75px;
+    }
+
+</style>
+  </head>
+  <body>
+    <div class="container h-10 d-flex">
+    <div class="m-auto">
+      <h1 class="text-center display-3">Pop Quiz!</h1>
+      <p class="text-center lead" id='tagLine'>Let's find out how smart you <em>really</em> are.</p>
+      <div class="alert" role="alert" id='correct'>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 mx-auto">
+          <div>
+            <p class="text-center font-weight-bold text-info lead" id='quizTitle'>Start By Choosing a Quiz </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 m-auto">
+          <div class="btn-content" id='quizButtons'>
+            <button class="btn btn-lg btn-block btn-outline-info" id="quiz1">Quiz One</button>
+            <br/>
+            <button class="btn btn-lg btn-block btn-outline-info" id="quiz2">Quiz Two</button>
+          </div>
+          <div class="btn-content" id='quiz'>
+            <button class="btn btn-lg btn-block btn-outline-info" id="answer0"></button>
+            <br/>
+            <button class="btn btn-lg btn-block btn-outline-info" id="answer1"></button>
+            <br/>
+            <button class="btn btn-lg btn-block btn-outline-info" id="answer2"></button>
+            <br/>
+            <button class="btn btn-lg btn-block btn-outline-info" id="answer3"></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- add javascript for quiz logic -->
+    <script src="quiz.js"></script>
+  </body>
+
+</html>
